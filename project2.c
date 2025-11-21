@@ -678,43 +678,43 @@ int main(){
 // }
 
 //                     WAP to print the max and min elements from Array list and also second max and second min
-#include <stdio.h>
+// #include <stdio.h>
 
-int main() {
-    int n, i;
-    system("cls");
-    printf("Enter number of elements: ");
-    scanf("%d", &n);
+// int main() {
+//     int n, i;
+//     system("cls");
+//     printf("Enter number of elements: ");
+//     scanf("%d", &n);
 
-    int arr[n];
-    printf("Enter %d elements:\n", n);
-    for (i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
-    }
+//     int arr[n];
+//     printf("Enter %d elements:\n", n);
+//     for (i = 0; i < n; i++) {
+//         scanf("%d", &arr[i]);
+//     }
 
-    int max = arr[0], min = arr[0],secmax,secmin;
-    for (i = 1; i < n; i++) {
-        if (arr[i] > max)
-        { 
-            secmax = max;
-            max = arr[i];
-        }
-        if (arr[i] < min)
-        {
+//     int max = arr[0], min = arr[0],secmax,secmin;
+//     for (i = 1; i < n; i++) {
+//         if (arr[i] > max)
+//         { 
+//             secmax = max;
+//             max = arr[i];
+//         }
+//         if (arr[i] < min)
+//         {
             
-            min = arr[i];
-            secmin = min;
-        }
-    }
+//             min = arr[i];
+//             secmin = min;
+//         }
+//     }
 
-    printf("Maximum element = %d\n", max);
-    printf("Minimum element = %d\n", min);
-    printf("second Maximum elementt = %d\n", secmax);
-    printf("second Minimum elementt = %d\n", secmin);
+//     printf("Maximum element = %d\n", max);
+//     printf("Minimum element = %d\n", min);
+//     printf("second Maximum elementt = %d\n", secmax);
+//     printf("second Minimum elementt = %d\n", secmin);
 
 
-    return 0;
-}
+//     return 0;
+// }
 
 // WAP to second element in array list 
 // #include <stdio.h>
@@ -742,3 +742,22 @@ int main() {
 // WAP to count the array elment
 // WAP to print the duplicate value
 // 
+
+// WAP to print first_last_digit
+#include <stdio.h>
+
+int main(void) {
+    int n = 12345;
+    int temp = n;
+
+    // Last digit
+    printf("last number is: %d\n", temp % 10);
+
+    // First digit
+    while (temp > 9) {
+        temp /= 10;
+    }
+    printf("first number is: %d\n", temp);
+
+    return 0;
+}
