@@ -716,7 +716,7 @@ int main() {
     return 0;
 }
 
-// WAP to second element in array list 
+ WAP to second element in array list 
 // #include <stdio.h>
 
 // int main() {
