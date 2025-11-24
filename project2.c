@@ -756,27 +756,65 @@ int main(){
 
 // WAP to count no. of alphabet in strings
 
+// #include <stdio.h>
+
+// int main() {
+//     char name[50];   
+//     char dept[50];
+//     int i, counter=0;  
+
+//     printf("Enter your name: ");
+//     fgets(name, 50 , stdin);
+
+//     printf("Enter your department: ");
+//     fgets(dept, 50, stdin);
+
+//     printf("Name: %s", name);
+//     printf("Department: %s", dept);
+
+//     for(i=0;name[i]!='\0';i++){
+//         counter++;
+//     }
+
+//     printf("no. of alphabet : %d",counter-1);
+
+//     return 0;
+// }
+
+// WAP to count the no. of vowels and consonants from a strings
 #include <stdio.h>
+#include <string.h>
+#include <ctype.h>   // for isalpha() and tolower()
 
 int main() {
     char name[50];   
-    char dept[50];
-    int i, counter=0;  
+    char dept[50];   
+    int i, vowels = 0, consonants = 0;  
 
     printf("Enter your name: ");
-    fgets(name, 50 , stdin);
+    fgets(name, sizeof(name), stdin);
+    name[strcspn(name, "\n")] = '\0';   // remove newline
 
     printf("Enter your department: ");
-    fgets(dept, 50, stdin);
+    fgets(dept, sizeof(dept), stdin);
+    dept[strcspn(dept, "\n")] = '\0';   // remove newline
 
-    printf("Name: %s", name);
-    printf("Department: %s", dept);
+    printf("\nName: %s\n", name);
+    printf("Department: %s\n", dept);
 
-    for(i=0;name[i]!='\0';i++){
-        counter++;
+    // Count vowels and consonants in name
+    for(i = 0; name[i] != '\0'; i++) {
+        char ch = tolower(name[i]);   // case-insensitive
+        if(isalpha(ch)) {             // only alphabets
+            if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')
+                vowels++;
+            else
+                consonants++;
+        }
     }
 
-    printf("no. of alphabet : %d",counter);
+    printf("No. of vowels in name: %d\n", vowels);
+    printf("No. of consonants in name: %d\n", consonants);
 
     return 0;
 }
