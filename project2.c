@@ -1,49 +1,21 @@
-/*#include <stdio.h>
-int main(){
-    int num1 , num2 , sum , mul , sub , div , mod;
-    system("cls");
-    printf("enter the integer:");
-    scanf("%d %d",&num1,&num2);
-    sum=num1+num2;
-    sub=num1-num2;
-    mul=num1*num2;
-    div=num1/num2;
-    mod=num1%num2;
-    printf("the sum of %d and %d=%d\n",num1,num2,sum);
-     printf("the subtraction of %d and %d=%d\n",num1,num2,sub);
-      printf("the multiplication of %d and %d=%d\n",num1,num2,mul);
-       printf("the division of %d and %d=%d\n",num1,num2,div); 
-       printf("the modulus of %d and %d=%d\n",num1,num2,mod);
+// WAP to Sum two numbers 
+// #include <stdio.h>
 
-    
-    return 0;
-}    
-*/
+// int main(void) {
+//     int a, b, sum;
 
-// #include<stdio.h>
-// int main()
-// {
-//     int num1, num2, sum, sub, mul, div, mod;
-//     system("cls");
-//     printf("Enter two integer:");
-//     scanf("%d %d", &num1, &num2);
+//     // Input two numbers
+//     printf("Enter two integers: ");
+//     scanf("%d %d", &a, &b);
 
-//     sum=num1+num2;
-//     sub=num1-num2;
-//     mul=num1*num2;
-//     div=num1/num2;
-//     mod=num1%num2;
+//     // Calculate sum
+//     sum = a + b;
 
-//     printf("The sum of %d and %d = %d\n", num1, num2, sum);
-//     printf("The subtraction of %d and %d = %d\n", num1, num2, sub);
-//     printf("The multiplication of %d and %d = %d\n", num1, num2, mul);
-//     printf("The division of %d and %d = %d\n", num1, num2, div);
-//     printf("The modulus of %d and %d = %d\n", num1, num2, mod);
+//     // Output result
+//     printf("Sum of %d and %d is: %d\n", a, b, sum);
 
 //     return 0;
-
 // }
-
 
 /* x= 20 and y 30 after swapiing x=30, y 20 */
 //WAP to Swap two numbers 
@@ -744,20 +716,67 @@ int main(){
 // 
 
 // WAP to print first_last_digit
+// #include <stdio.h>
+
+// int main(void) {
+//     int n = 12345;
+//     int temp = n;
+
+//     // Last digit
+//     printf("last number is: %d\n", temp % 10);
+
+//     // First digit
+//     while (temp > 9) {
+//         temp /= 10;
+//     }
+//     printf("first number is: %d\n", temp);
+
+//     return 0;
+// }
+
+// // WAP to print your name and dept 
+
+// #include <stdio.h>
+
+// int main() {
+//     char name[50];   
+//     char dept[50];   
+
+//     printf("Enter your name: ");
+//     fgets(name, 50, stdin);
+
+//     printf("Enter your department: ");
+//     fgets(dept, 50, stdin);
+
+//     printf("Name: %s", name);
+//     printf("Department: %s", dept);
+
+//     return 0;
+// }
+
+// WAP to count no. of alphabet in strings
+
 #include <stdio.h>
 
-int main(void) {
-    int n = 12345;
-    int temp = n;
+int main() {
+    char name[50];   
+    char dept[50];
+    int i, counter=0;  
 
-    // Last digit
-    printf("last number is: %d\n", temp % 10);
+    printf("Enter your name: ");
+    fgets(name, 50 , stdin);
 
-    // First digit
-    while (temp > 9) {
-        temp /= 10;
+    printf("Enter your department: ");
+    fgets(dept, 50, stdin);
+
+    printf("Name: %s", name);
+    printf("Department: %s", dept);
+
+    for(i=0;name[i]!='\0';i++){
+        counter++;
     }
-    printf("first number is: %d\n", temp);
+
+    printf("no. of alphabet : %d",counter);
 
     return 0;
 }
