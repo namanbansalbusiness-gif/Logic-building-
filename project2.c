@@ -81,46 +81,52 @@ int main(){
 */
 
 //Wap to check the no is postive
-/*
-#include<stdio.h>
-   int main(){
-    int var;
-    system("cls");
-    printf("enter the integer");
-    scanf("%d",&var);
-    if (var>0);
-    printf("Inside if block");
-    printf("The number %d is positive", var);
-    printf("outside if block");
-   return 0;
-   }
 
-*/
-/*
+// #include <stdlib.h> 
+
+// int main() {
+//     int var;
+//     system("cls"); 
+//     printf("Enter the integer: ");
+//     scanf("%d", &var);
+
+//     if (var > 0) {
+//         printf("Inside if block\n");
+//         printf("The number %d is positive\n", var);
+//     } else {
+//         printf("The number %d is not positive\n", var);
+//     }
+
+//     printf("Outside if block\n");
+//     return 0;
+// }
+
+
 //Wap to check the no is postive or negative
 
-#include<stdio.h>
-   int main(){
-    int var;
+// #include <stdio.h>
 
-    printf("enter the integer");
-    scanf("%d",&var);
-    if (var>0)
-    {
-    printf("Inside if block");
-    printf("The number %d is positive", var);
-    }
-    else
-    {
-        printf("inside the block");
-        printf("the number %d is negative" ,var);
+// int main() {
+//     int var;
 
-    }
+//     printf("Enter an integer: ");
+//     scanf("%d", &var);
 
-    printf("outside if block");
-   return 0;
-   }
-*/
+//     if (var > 0) {
+//         printf("Inside if block\n");
+//         printf("The number %d is positive\n", var);
+//     } else if (var < 0) {
+//         printf("Inside else block\n");
+//         printf("The number %d is negative\n", var);
+//     } else {
+//         printf("Inside else-if block\n");
+//         printf("The number is zero\n");
+//     }
+
+//     printf("Outside if block\n");
+//     return 0;
+// }
+
 
 /*
 //Wap to check the no is postive or negative
@@ -154,122 +160,67 @@ int main(){
    }
 */
 
-/*
-#include<stdio.h>
-int main(){
-    int var;
-    printf("enter the date :");
-    scanf("%d",&var);
 
-    if(var=1)
-    {
-        printf("monday");
-    }    
 
-     if(var=2)
-    {
-        printf("Tuesday");
-    }    
-
- if(var=3)
-    {
-        printf("wednesday");
-    }    
- if(var=4)
-    {
-        printf("Thursday");
-    }    
-
- if(var=5)
-    {
-        printf("friday");
-    }    
-
- if(var=6)
-    {
-        printf("saturday");
-    }    
-
- if(var=7)
-    {
-        printf("sunday");
-    }    
-
-else {
-printf("invalid");
-}
- 
-return 0;
-}
-*/
-
-/*
 //Monday to sunday when date is put
-#include <stdio.h>
+// #include <stdio.h>
 
-int main() {
-    int var;
-    printf("Enter the date: ");
-    scanf("%d", &var);
+// int main() {
+//     int var;
+//     printf("Enter the date: ");
+//     scanf("%d", &var);
 
-    if (var == 1) {
-        printf("Monday\n");
-    } else if (var == 2) {
-        printf("Tuesday\n");
-    } else if (var == 3) {
-        printf("Wednesday\n");
-    } else if (var == 4) {
-        printf("Thursday\n");
-    } else if (var == 5) {
-        printf("Friday\n");
-    } else if (var == 6) {
-        printf("Saturday\n");
-    } else if (var == 7) {
-        printf("Sunday\n");
-    } else {
-        printf("Invalid \n");
-    }
+//     if (var == 1) {
+//         printf("Monday\n");
+//     } else if (var == 2) {
+//         printf("Tuesday\n");
+//     } else if (var == 3) {
+//         printf("Wednesday\n");
+//     } else if (var == 4) {
+//         printf("Thursday\n");
+//     } else if (var == 5) {
+//         printf("Friday\n");
+//     } else if (var == 6) {
+//         printf("Saturday\n");
+//     } else if (var == 7) {
+//         printf("Sunday\n");
+//     } else {
+//         printf("Invalid \n");
+//     }
 
-    return 0;
-}
+//     return 0;
+// }
 
-*/
 
-/*
+
 //WAP to check the given character is  vowel or not?
-#include<stdio.h>
-int main(){
-    system("cls");
-    char x;
-    printf("enter the letter : ");
-    scanf("%c", &x);
+// #include<stdio.h>
+// int main(){
+//     system("cls");
+//     char x;
+//     printf("enter the letter : ");
+//     scanf("%c", &x);
     
-    if (x == 'a'){
-    printf("valid");
-    }
-    else if ( x == 'e'){
-    printf("valid");
-    }
-   
+//     if (x == 'a'){
+//     printf("valid");
+//     }
+//     else if ( x == 'e'){
+//     printf("valid");
+//     } else if ( x == 'i'){
+//     printf("valid");
+//     }
+//     else if ( x == 'o'){
+//     printf("valid");
+//     }
+//     else if ( x == 'u'){
+//     printf("valid");
+//     }
+//     else {
+//     printf("invalid");
+//     }
 
-    else if ( x == 'i'){
-    printf("valid");
-    }
-    else if ( x == 'o'){
-    printf("valid");
-    }
-
-    else if ( x == 'u'){
-    printf("valid");
-    }
-    else {
-    printf("invalid");
-    }
-
-    return 0;
-}
-*/
-
+//     return 0;
+// }
 
 //WAP to check if the no. is even or odd if even multiply by 2
 // #include <stdio.h>
@@ -292,6 +243,7 @@ int main(){
 // }
 
 //Nested statement
+// WAP to check if Indian and if indian tell them if they can vote 
 // #include <stdio.h>
 
 // int main() {
@@ -301,7 +253,7 @@ int main(){
     
 
 //     printf("Enter character 'I' or 'i' if you are Indian: ");
-//     scanf(" %c", &c);  // Fixed input format
+//     scanf(" %c", &c);  
 
 //     if (c == 'I' || c == 'i') {
 //         printf("Great! Enter your age: ");
@@ -339,21 +291,6 @@ int main(){
 //             >60 & <70       B+
 //             >50 & <60       C
 //             below 50        Fail
-
-// #include<stdio.h>
-// intmain(){
-//     float ID,marks,vote;
-
-//     printf("enter the ID : ");
-//     scanf("%f",&ID);
-
-//     printf("enter the marks : ");
-//     scanf("%f",&marks);
-
-    
-
-//     return 0;
-// }
 
 // #include <stdio.h>
 
@@ -395,51 +332,11 @@ int main(){
 //     return 0;
 // }
 
-// Looping statements
-// #include<stdio.h>
-// int main(){
-//     int n=10,i;
-//     i=1;
-//     while(i<=n){
-//         printf("i=%d\n",i);
-//         i++;
-
-//     }        
-   
-//     return 0;
-// 
-
-// #include<stdio.h>
-// int main(){
-//     int rows;
-//     printf("enter no. of rows : ");
-//     scanf("%d",&rows);
-//     for(int i=0;i<rows;i++) {
-//         for(int j=0;j<=i;j++){
-//             printf("* ");
-//         }
-//         printf("\n");
-//     }
-//     return 0;
-// }
-
-// #include<stdio.h>
-// int main(){
-//     for(int i=1;i<3;i++)
-//     {
-//         printf("Shoolini\n");
-//         for(int j =1;j<3;j++){
-//             printf("Btech cse\n");
-//         }
-//     }
-//     return 0;
-
-// } 
-
-// WAP to print the reverse of no. 123 -> 321
+// WAP reverse the no. 123 -> 321
 // #include<stdio.h>
 
 // int main() {
+//     system("cls");
 //     int n = 123;
 //     int temp = n;
 //     int rev = 0, rem;
@@ -459,6 +356,7 @@ int main(){
 // #include<stdio.h>
 
 // int main() {
+//     system("cls");
 //     int n = 121;
 //     int temp = n;
 //     int rev = 0, rem;
@@ -468,9 +366,6 @@ int main(){
 //         rev = rev * 10 + rem;
 //         n = n / 10;
 //     }
-
-//    printf("Reversed no. : %d\n", rev);
-
 //    if (rev == temp){
 //     printf("it is pallidrome");
 //    } else {
@@ -515,7 +410,8 @@ int main(){
 // WAP to print no. of digit in a no.
 // #include<stdio.h>
 // int main(){
-//     int n = 12344567;
+//     system("cls");
+//     int n = 12345678;
 //     int i = 0;
 //     while(n != 0){
 //         n = n/10;
@@ -531,7 +427,6 @@ int main(){
 
 // int main() {
 //     int i, firstDigit, lastDigit;
-
     
 //     printf("Enter a number: ");
 //     scanf("%d", &i);
@@ -574,7 +469,7 @@ int main(){
 //     int swapped = (temp % pow) / 10;      
 //     swapped = last * pow + swapped * 10 + first;
 
-//     printf("Number after swapping first and last digits: %d\n", swapped);
+//     printf("Number after swapping : %d\n", swapped);
 
 //     return 0;
 // }
@@ -782,39 +677,37 @@ int main(){
 // }
 
 // WAP to count the no. of vowels and consonants from a strings
-#include <stdio.h>
-#include <string.h>
-#include <ctype.h>   // for isalpha() and tolower()
+// #include <stdio.h>
 
-int main() {
-    char name[50];   
-    char dept[50];   
-    int i, vowels = 0, consonants = 0;  
+// int main() {
+//     char name[50];   
+//     char dept[50];   
+//     int i, vowels = 0, consonants = 0;  
 
-    printf("Enter your name: ");
-    fgets(name, sizeof(name), stdin);
-    name[strcspn(name, "\n")] = '\0';   // remove newline
+//     printf("Enter your name: ");
+//     fgets(name, sizeof(name), stdin);
+//     name[strcspn(name, "\n")] = '\0';   // remove newline
 
-    printf("Enter your department: ");
-    fgets(dept, sizeof(dept), stdin);
-    dept[strcspn(dept, "\n")] = '\0';   // remove newline
+//     printf("Enter your department: ");
+//     fgets(dept, sizeof(dept), stdin);
+//     dept[strcspn(dept, "\n")] = '\0';   // remove newline
 
-    printf("\nName: %s\n", name);
-    printf("Department: %s\n", dept);
+//     printf("\nName: %s\n", name);
+//     printf("Department: %s\n", dept);
 
-    // Count vowels and consonants in name
-    for(i = 0; name[i] != '\0'; i++) {
-        char ch = tolower(name[i]);   // case-insensitive
-        if(isalpha(ch)) {             // only alphabets
-            if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')
-                vowels++;
-            else
-                consonants++;
-        }
-    }
+//     // Count vowels and consonants in name
+//     for(i = 0; name[i] != '\0'; i++) {
+//         char ch = tolower(name[i]);   // case-insensitive
+//         if(isalpha(ch)) {             // only alphabets
+//             if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')
+//                 vowels++;
+//             else
+//                 consonants++;
+//         }
+//     }
 
-    printf("No. of vowels in name: %d\n", vowels);
-    printf("No. of consonants in name: %d\n", consonants);
+//     printf("No. of vowels in name: %d\n", vowels);
+//     printf("No. of consonants in name: %d\n", consonants);
 
-    return 0;
-}
+//     return 0;
+// }
