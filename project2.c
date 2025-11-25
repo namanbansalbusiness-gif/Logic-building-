@@ -494,6 +494,141 @@ int main(){
 //     return 0;
 // }
 
+// WAP for factorial of a number
+// #include<stdio.h>
+// int main(){
+//     int x,i,factorial=1;
+
+//     printf("enter a no. : ");
+//     scanf("%d",&x);
+
+//     for (i=1;i<=x;i++){
+//         factorial *= i;
+//     }
+//     printf("factorial of no. is %d",factorial);
+//     return 0;
+// }
+
+// WAP to find HCF of two no.
+// #include<stdio.h>
+// int main(){
+//     system("cls");
+//     int x,y,i,hcf;
+
+//     printf("enter a no. :");
+//     scanf("%d",&x);
+
+//     printf("enter a no. : ");
+//     scanf("%d",&y);
+
+//     for(i=1;i<=x&&i<=y;i++){
+//         if(x%i==0 && y%i==0)
+//         hcf = i;
+//     }
+//     printf("the hcf of %d and %d is %d",x,y,hcf);
+//     return 0;
+// }
+
+// WAP for LCM of two numbers
+// #include<stdio.h>
+// int main(){
+//     system("cls");
+//     int x,y,max;
+
+//     printf("enter two no. : ");
+//     scanf("%d %d",&x,&y);
+
+//     max = (x>y) ? x:y;
+//     while(1){
+//         if(max%x == 0 && max%y == 0){
+//             printf("LCM of %d and %d is %d\n",x,y,max);
+//             break;
+//         }
+//         max++;
+//     }
+//     return 0;
+// }
+// WAP to check number is prime 
+// #include<stdio.h>
+// int main(){
+//     system("cls");
+//     int n,i,prime = 1;
+
+//     printf("enter a no. : ");
+//     scanf("%d", &n);
+
+//     if (n<=1){
+//         prime = 0;
+//     }else{
+//         for(i=2;i<=n/2;i++){
+//             if(n%i == 0){
+//                 prime = 0;
+//                 break;
+//             }
+//         }
+//     }if(prime){
+//         printf("%d is prime \n",n);
+//     } else {
+//         printf("%d is not prime",n);
+//     }
+//     return 0;
+// }
+
+// WAP to print table of a number
+// #include<stdio.h>
+// int main(){
+//     system("cls");
+//     int x,i;
+//     printf("enter a no. :");
+//     scanf("%d", &x);
+
+//     for(i=1;i<=10;i++){
+//         printf("%d\n",x*i);
+//     }
+//     return 0;
+// }
+
+// WAP to print all odd number between 5 to 50
+// #include <stdio.h>
+
+// int main() {
+//     system("cls");
+//     for(int i = 5; i <= 50; i += 2) {
+//         printf("%d\n", i);
+//     }
+//     return 0;
+// }
+
+// WAP to print no. from 0 to n.
+// #include <stdio.h>
+
+// int main() {
+//     system("cls");
+//     int n;
+//     printf("Enter n: ");
+//     scanf("%d", &n);
+
+//     for(int i = 0; i <= n; i++) {
+//         printf("%d\n", i);
+//     }
+
+//     return 0;
+// }
+
+// WAP to take input untill a even no. is entered
+// #include<stdio.h>
+
+// int main(){
+//     int x;
+//     for( ; ; ){
+//         printf("enter a no. : ");
+//         scanf("%d",&x);
+//         if(x%2 == 0)
+//         break;
+//     }
+//     return 0;
+// }
+
 // // WAP to print no. in reverse order
 
 // #include <stdio.h>

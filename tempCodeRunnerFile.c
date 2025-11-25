@@ -1,26 +1,13 @@
-#include <stdio.h>
+#include<stdio.h>
+int main(){
+    int x,i,factorial=1;
 
-int main() {
-    int n, first, last, temp, pow = 1;
+    printf("enter a no. : ");
+    scanf("%d",&x);
 
-    printf("Enter a number: ");
-    scanf("%d", &n);
-
-    temp = n;         
-    last = n % 10;    
-
-
-    while (n >= 10) {
-        n = n / 10;
-        pow = pow * 10;
+    for (i=1;i<=x;i++){
+        factorial *= i;
     }
-    first = n;      
-
-    
-    int swapped = (temp % pow) / 10;      
-    swapped = last * pow + swapped * 10 + first;
-
-    printf("Number after swapping : %d\n", swapped);
-
+    printf("factorial of no. is %d",factorial);
     return 0;
 }
