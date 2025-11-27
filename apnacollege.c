@@ -572,34 +572,63 @@
 //     return 0;
 // }
 
-#include <stdio.h>
-#include <math.h>
+// #include <stdio.h>
+// #include <math.h>
 
-int main() {
-    int num, first, last, digits, temp;
+// int main() {
+//     int num, first, last, digits, temp;
 
-    printf("Enter a number: ");
-    scanf("%d", &num);
+//     printf("Enter a number: ");
+//     scanf("%d", &num);
 
-    last = num % 10;
+//     last = num % 10;
 
-    // Extract first digit
-    first = num;
-    while (first >= 10) {
-        first = first / 10;
-    }
+//     // Extract first digit
+//     first = num;
+//     while (first >= 10) {
+//         first = first / 10;
+//     }
 
-    // Count total digits
-    digits = (int)log10(num);
+//     // Count total digits
+//     digits = (int)log10(num);
 
-    // Remove first and last digits to get the middle part
-    int middle = num % (int)pow(10, digits); // remove first digit
-    middle = middle / 10; // remove last digit
+//     // Remove first and last digits to get the middle part
+//     int middle = num % (int)pow(10, digits); // remove first digit
+//     middle = middle / 10; // remove last digit
 
-    // Reconstruct the number with swapped digits
-    temp = last * (int)pow(10, digits) + middle * 10 + first;
+//     // Reconstruct the number with swapped digits
+//     temp = last * (int)pow(10, digits) + middle * 10 + first;
 
-    printf("Number after swapping: %d\n", temp);
+//     printf("Number after swapping: %d\n", temp);
 
-    return 0;
-}
+//     return 0;
+// }e 
+
+
+//                                  Strings 
+
+//  WAP to create a string firstName & LastName to store details of user & print all the characters using a loop
+// #include <stdio.h>
+
+// void printString(char arr[]);
+
+// int main() {
+//     char FirstName[] = "Naman";
+//     char LastName[] = "Bansal";
+
+//     printf("First Name: ");
+//     printString(FirstName);
+
+//     printf("Last Name: ");
+//     printString(LastName);
+
+//     return 0;
+// }
+
+// void printString(char arr[]) {
+//     for (int i = 0; arr[i] != '\0'; i++) {
+//         printf("%c", arr[i]);
+//     }
+//     printf("\n");
+// }
+
