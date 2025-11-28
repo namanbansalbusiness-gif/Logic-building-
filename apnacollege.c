@@ -632,3 +632,25 @@
 //     printf("\n");
 // }
 
+// #include <stdio.h>
+// int main(){
+//     char *canChange = "Hello world";
+//     puts(canChange);
+//     canChange = "Hello";
+//     puts(canChange);
+//     return 0;
+// }
+
+// WAP that inputs user's name and prints its length
+#include<stdio.h>
+
+int countlength(char arr[]);
+
+int main(){
+    return 0;
+}
+
+int countlength(char arr[]){
+    int count = 0;
+    for
+}
