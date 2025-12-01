@@ -642,15 +642,145 @@
 // }
 
 // WAP that inputs user's name and prints its length
-#include<stdio.h>
+// #include <stdio.h>
+// #include <string.h>  // for strlen()
 
-int countlength(char arr[]);
+// int main() {
+//     char name[100];   // buffer to store name
 
-int main(){
-    return 0;
-}
+//     printf("Enter your name: ");
+//     fgets(name, sizeof(name), stdin);  // safer than gets()
 
-int countlength(char arr[]){
-    int count = 0;
-    for
-}
+//     // Remove newline character if present
+//     name[strcspn(name, "\n")] = '\0';
+
+//     int length = strlen(name);  // string length function
+
+//     printf("Length of your name is: %d\n", length);
+
+//     return 0;
+// }
+
+//                               Standard library functions
+
+// // To count number of character excluding '\o'
+// #include<stdio.h>
+// #include<string.h>
+
+// int main(){
+//     char name[] = "Naman";
+//     printf("length is : %d" , strlen(name));
+//     return 0;
+// }
+
+// // Copies value of old string to new string 
+// #include<stdio.h>
+// #include<string.h>
+
+// int main (){
+//     char oldStr[] = "oldStr";
+//     char newStr[] = "newStr";
+//     strcpy(newStr,oldStr);
+//     puts(newStr);
+//     return 0;
+// }
+
+// // Add (concatenates) first string with second
+// #include<stdio.h>
+// #include<string.h>
+
+// int main(){
+//     system("cls");
+
+//     char firstStr[] = "Hello";
+//     char LastStr[] = "world";
+
+//     strcat(firstStr,LastStr);
+//     puts(firstStr);
+//     return 0;
+// }
+
+// // Compares 2 strings & returns a value
+// #include<stdio.h>
+// #include<string.h>
+
+// int main(){
+//     system("cls");
+
+//     char firstStr[] = "Apple";
+//     char LastStr[] = "Banana";
+
+//     printf("%d",strcmp(firstStr,LastStr));
+    
+//     return 0;
+// }
+
+// WAP take a string input from the user using %c.
+//  #include<stdio.h>
+//  #include<string.h>
+
+//  int main(){
+//     system("cls");
+//     char str[100];
+//     char ch;
+//     int i = 0;
+
+//     while(ch != '\n'){
+//         scanf("%c", &ch);
+//         str[i] = ch;
+//         i++;
+//     } 
+//     str[i] = '\0';
+//     puts(str);
+//     return 0;
+//  }
+
+// // Salting
+// WAP to find the salted form of a password entered by user if the salt is "123" & added at the end.
+// #include<stdio.h>
+// #include<string.h>
+
+// void salting(char password[]);
+
+// int main(){
+//     system("cls");
+//     char password[100];
+//     scanf("%s", password);
+//     salting(password);
+//     return 0;
+// }
+
+// void salting(char password[]){
+//     char salt[] = "123";
+//     char newPass[200];
+
+//     strcpy(newPass, password);
+//     strcat(newPass, salt);
+//     puts(newPass);
+// }
+
+// WAP  a function named slice , which takes a string & returns a sliced string from index n to m
+// #include <stdio.h>
+// #include <string.h>
+
+// void slice(char str[], int n, int m);
+
+// int main() {
+//     system("cls");
+//     char str[] = "HelloWorld";
+//     slice(str, 3, 6);  // slice from index 3 to 6
+//     return 0;
+// }
+
+// void slice(char str[], int n, int m) {
+//     char newStr[100];
+//     int j = 0;
+
+//     for (int i = n; i <= m; i++) {
+//         newStr[j] = str[i];
+//         j++;
+//     }
+
+//     newStr[j] = '\0';  // terminate string
+//     puts(newStr);
+// }
