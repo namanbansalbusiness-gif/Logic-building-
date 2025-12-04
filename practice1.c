@@ -806,3 +806,42 @@
 
 //     return 0;
 // }
+
+// WAP to store the data of 3 students
+// #include<stdio.h>
+// #include<string.h>
+
+// struct student {
+//     int roll;
+//     float cgpa;
+//     char name[100];
+// };
+
+// int main() {
+//     struct student s[3];  // array of 3 students
+
+//     // Student 1
+//     s[0].roll = 1929;
+//     s[0].cgpa = 9.0;
+//     strcpy(s[0].name, "Naman");
+
+//     // Student 2
+//     s[1].roll = 1930;
+//     s[1].cgpa = 8.5;
+//     strcpy(s[1].name, "Rahul");
+
+//     // Student 3
+//     s[2].roll = 1931;
+//     s[2].cgpa = 9.2;
+//     strcpy(s[2].name, "Priya");
+
+//     // Printing all students
+//     for (int i = 0; i < 3; i++) {
+//         printf("Student %d:\n", i+1);
+//         printf("  Name     = %s\n", s[i].name);
+//         printf("  Roll No  = %d\n", s[i].roll);
+//         printf("  CGPA     = %.2f\n\n", s[i].cgpa);
+//     }
+
+//     return 0;
+// }
