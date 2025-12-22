@@ -3242,3 +3242,34 @@
 // 
 //     return 0;
 // }
+
+#include <stdio.h>
+
+// Function to calculate the product of diagonal elements
+int diagonalProduct(int matrix[10][10], int n) {
+    int product = 1;
+    for(int i = 0; i < n; i++) {
+        product *= matrix[i][i];  // Multiply elements of the main diagonal
+    }
+    return product;
+}
+
+int main() {
+    int n;
+    int matrix[10][10];
+
+    printf("Enter the size of the square matrix: ");
+    scanf("%d", &n);
+
+    printf("Enter the elements of the matrix:\n");
+    for(int i = 0; i < n; i++) {
+        for(int j = 0; j < n; j++) {
+            scanf("%d", &matrix[i][j]);
+        }
+    }
+
+    int result = diagonalProduct(matrix, n);
+    printf("Product of diagonal elements = %d\n", result);
+
+    return 0;
+}
